@@ -86,6 +86,8 @@ body{
     /* padding: 5px; */
 }
 
+
+
 /* nav section closed*/
 
 /* hero section start...........
@@ -117,7 +119,77 @@ body{
     width: 100%;
     margin-top:30px;
 }
+/* hero section closed */
 
+
+
+
+/* quick list of our feature section start...........
+..................................................... */
+
+.our-feature-main-container{
+    display: flex;
+    align-items: center;
+    margin-left: 380px;
+    margin-top: 60px;
+}
+
+.our-feature-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px;
+}
+
+
+/* our features image style */
+
+.our-features-image{
+    max-width:100%;
+    /* border: 2px solid red; */
+}
+
+.image-sub{
+    /* border: 2px solid blue; */
+    width: 300px;
+}
+
+
+/* our features title text style */
+
+.feature-title-container{
+    max-width: 380px;
+    height: 200px;
+    /* border: 2px solid blue; */
+    margin-left:70px;
+}
+
+
+.our-features-title{
+    font-size:2.15rem;
+}
+
+.features{
+    color: #FF900E;
+}
+
+.second-btn{
+    margin-top: 20px;
+}
+
+.our-feature-passage{
+    font-size:1rem;
+    width:357px;
+    height: 58px;
+    margin-top:-20px;
+    /* border: 2px solid rgb(255, 28, 28); */
+}
+
+/* responsive section..................
+..........................start................. */
+
+
+
+/* mini device like mobile phone size */
 
 @media screen and (max-width:576px) {
     
@@ -151,8 +223,39 @@ body{
     .hero-image{
         width:100%;
     }
+
+    /* second section quick list our feature */
+
+    .our-feature-main-container{
+     flex-direction: column-reverse;
+     margin-top: -10px;
+    }
+    .feature-title-container{
+        margin-left: -350PX;
+    }
+    .our-feature-container{
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: -380px;
+    margin-top: 110px;
+    /* border: 2px solid blue; */
+
+    }
+
+    .image-sub{
+        width: 360px;
+        /* border: 2px solid orange; */
+    }
+    .our-features-image{
+      width: 100%;
+      margin-top:20px;
+      /* border:1px solid red ; */
+    }
 }
 
+
+
+/* tablet size responsive section.... 
+.....................................*/
 
 @media screen and (min-width:576px) and (max-width:767.98px) {
     
@@ -169,11 +272,33 @@ body{
    .hero-image-container {
     margin: 0 auto;
     max-width: 600px; 
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .item-container{
     margin-right: 50px;
 }
 
+}
+
+/* second section quick list our feature */
+
+.our-feature-main-container{
+   flex-direction: column-reverse;
+}
+
+.our-feature-container{
+    margin-top:130px;
+    margin-left:-390px;
+}
+
+.feature-title-container{
+    margin-left: -390px;
+    margin-top: -10px;
+}
+
+.our-feature-passage{
+    width: 400px;
+    /* border: 2px solid red; */
+    height: 60px;
 }
